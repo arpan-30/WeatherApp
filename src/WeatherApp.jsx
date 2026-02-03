@@ -20,7 +20,7 @@ export default function WeatherApp(){
     }
     return (
         <div>
-            <b><h1 style={{textAlign:"center",padding:"20px",fontWeight:"bolder"}}>Weather App 🌦️</h1></b>
+            <b><h1 style={{textAlign:"center",padding:"20px",fontWeight:"bolder",marginBottom:"0px"}}>Weather App 🌦️</h1></b>           
             <SearchBox updateInfo={updateInfo} />
             {weatherInfo && <InfoBox info={weatherInfo} /> }
         </div>

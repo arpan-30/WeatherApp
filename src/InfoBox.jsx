@@ -27,7 +27,7 @@ export default function InfoBox({info}){
 
         title="green iguana"
       /> */}
-      {typeof info.temp === "number" && (
+      {/* {typeof info.temp === "number" && ( */}
 
       <Card sx={{ maxWidth: 345 }}>
 
@@ -61,7 +61,7 @@ export default function InfoBox({info}){
       </CardContent>
       
     </Card>
-    )}
+    {/* )} */}
     </div>
         </div>
     )
