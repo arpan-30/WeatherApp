@@ -5,12 +5,17 @@ import SearchIcon from '@mui/icons-material/Search';
 import "./SearchBox.css";
 import { useState } from 'react';
 
+
+// if(process.env.NODE_ENV !="production"){
+//     require('dotenv').config();
+// }
+
 export default function SearchBox({updateInfo}){
     let [city,setCity]=useState("");
     let[error,setError]=useState(false);
     const API_URL="http://api.openweathermap.org/data/2.5/weather";
-    const API_KEY="11697079449d7aa9eec356d2d0e115fa";
-    // const API_KEY = import.meta.env.VITE_API_KEY;
+    // const API_KEY=process.env.API_KEY;
+    const API_KEY = import.meta.env.VITE_API_KEY;
 
     let getWeatherInfo=async ()=>{
        try{
